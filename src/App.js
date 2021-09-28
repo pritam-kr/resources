@@ -193,7 +193,7 @@ function App() {
             </div>
           </div>
           <div className="links-container">
-            <h5 className="container-text">Resources of {resources}</h5>
+            <h5 className="container-text">Resources for {resources}</h5>
             {resourcesDb[resources].map((el) => {
               return (
                 <>
