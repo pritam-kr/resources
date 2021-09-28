@@ -2,6 +2,14 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import { useState } from "react";
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+} from "react-share";
 
 const resourcesDb = {
   html: [
@@ -134,7 +142,35 @@ const resourcesDb = {
     },
   ],
   nodejs: [{}],
-  extensions: [{}],
+  extensions: [
+    {
+      title: "ColorZilla",
+      link: `https://chrome.google.com/webstore/detail/colorzilla/
+      bhlhnicpbhignbdhedgjhgdocnmhomnp/`,
+    },
+    {
+      title: "Momentum",
+      link: `https://chrome.google.com/webstore/detail/momentum/
+      laookkfknpbbblfpciffpaejjkokdgca`,
+    },
+    {
+      title: "daily.dev",
+      link: "https://api.daily.dev/get?r=martin",
+    },
+    {
+      title: "Grammarly for chrome",
+      link: "https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen",
+    },
+    {
+      title: "JSON viewer",
+      link: "https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh",
+    },
+    {
+      title: "What font",
+      link: `https://chrome.google.com/webstore/detail/whatfont/
+      jabopobgcpjmedljpbcaablpmlmfcogm`,
+    },
+  ],
   blog: [
     {
       title: "hashnode.com",
@@ -170,6 +206,8 @@ function App() {
     setResources(links);
   }
 
+  var url = "https://learning-resources-links.netlify.app/";
+
   return (
     <>
       <Nav />
@@ -191,6 +229,24 @@ function App() {
               <h5 className="container-text">About</h5>
               <p>You can get all usefull resources.</p>
             </div>
+            <div className="about-info">
+              <h5 className="container-text">Share</h5>
+              <span className="share_icon">
+                <FacebookShareButton url={url}>
+                  <FacebookIcon size={30} round={true} />
+                </FacebookShareButton>
+              </span>
+              <span className="share_icon">
+                <TwitterShareButton url={url}>
+                  <TwitterIcon size={30} round={true} />
+                </TwitterShareButton>
+              </span>
+              <span className="share_icon">
+                <LinkedinShareButton url={url}>
+                  <LinkedinIcon size={30} round={true} />
+                </LinkedinShareButton>
+              </span>
+            </div>
           </div>
           <div className="links-container">
             <h5 className="container-text">Resources for {resources}</h5>
@@ -198,9 +254,12 @@ function App() {
               return (
                 <>
                   <div className="link-box">
-                    <a href={el.link} target="_blank" rel="noreferrer">
-                      <h3>{el.title}</h3>{" "}
-                    </a>
+                    <h3>
+                      {" "}
+                      <a href={el.link} target="_blank" rel="noreferrer">
+                        {el.title}{" "}
+                      </a>
+                    </h3>{" "}
                     <p> {el.link}</p>
                     <a href={el.link} target="_blank" rel="noreferrer">
                       <span>

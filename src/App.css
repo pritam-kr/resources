@@ -83,19 +83,27 @@
   padding: 1rem;
 }
 .link-box h3{
-  color: black;
+  color: rgb(5, 5, 5);
   width: auto;
 }
 .link-box a{
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.486);
+  color: rgba(0, 0, 0, 0.856);
+  display: block;
+}
+.link-box p{
+  width: 50px !important;
 }
 .link-box i{
   color: rgb(0, 89, 255);
   margin-top: 10px;
 }
 
-@media (max-width: 667px){
+.share_icon{
+  margin: 6px 6px 6px 0;
+}
+
+@media (max-width: 1158px){
   .keywords-container{
     height: auto;
   }
