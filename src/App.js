@@ -123,11 +123,11 @@ function App() {
               return (
                 <>
                   <div className="link-box">
-                    <a href={el.link}>
+                    <a href={el.link} target="_blank" rel="noreferrer">
                       <h3>{el.title}</h3>{" "}
                     </a>
                     <p> {el.link}</p>
-                    <a href={el.link}>
+                    <a href={el.link} target="_blank" rel="noreferrer">
                       <span>
                         <i class="fas fa-link"></i>
                       </span>{" "}
