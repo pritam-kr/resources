@@ -53,6 +53,10 @@ const resourcesDb = {
       title: "neogcamp - JavaScript in the browser!",
       link: "https://www.youtube.com/watch?v=yLZazznWoAs",
     },
+    {
+      title: "MDN - JavaScript",
+      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
   ],
   reactjs: [
     {
@@ -66,6 +70,10 @@ const resourcesDb = {
     {
       title: "w3school - Learn reactJs",
       link: "https://www.w3schools.com/REACT/DEFAULT.ASP",
+    },
+    {
+      title: "MDN - Learn reactJs",
+      link: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started",
     },
   ],
   roadmap: [
@@ -81,11 +89,65 @@ const resourcesDb = {
     },
   ],
   openSource: [{}],
-  projects: [{}],
+  projects: [
+    {
+      title: "JavaScript Projects for Beginners",
+      link: "https://skillcrush.com/blog/projects-you-can-do-with-javascript/",
+    },
+    {
+      title: "40 JavaScript Projects for Beginners",
+      link: "https://www.freecodecamp.org/news/javascript-projects-for-beginners/",
+    },
+    {
+      title: "30 Day Vanilla JS Coding Challenge",
+      link: "https://javascript30.com/",
+    },
+    {
+      title: "freecodecamp - Vanilla JavaScript Course",
+      link: "https://www.youtube.com/watch?v=3PHXvlpOkf4",
+    },
+    {
+      title:
+        "florin pop - 10 JavaScript Projects in 10 Hours - Coding Challenge 🔥",
+      link: "https://www.youtube.com/watch?v=dtKciwk_si4",
+    },
+    {
+      title:
+        "florin pop - 10 JavaScript Projects in 1 Hours - Coding Challenge 🔥",
+      link: "https://www.youtube.com/watch?v=8GPPJpiLqHk",
+    },
+  ],
   youtube: [{}],
-  CLI: [{}],
+  CLI: [
+    {
+      title: "First CLI App: Intro to programming",
+      link: "https://www.youtube.com/watch?v=_L-UszPmy2A",
+    },
+  ],
   nodejs: [{}],
   extensions: [{}],
+  blog: [
+    {
+      title: "hashnode.com",
+      link: "https://hashnode.com/",
+    },
+    {
+      title: "DEV community",
+      link: "https://dev.to/",
+    },
+    {
+      title: "Daily dev",
+      link: "https://daily.dev/",
+    },
+    {
+      title: "freecodecamp blog",
+      link: "https://www.freecodecamp.org/news/tag/blog/",
+    },
+    {
+      title: "medium.com",
+      link: "https://medium.com/",
+    },
+  ],
 };
 
 const language = Object.keys(resourcesDb);
