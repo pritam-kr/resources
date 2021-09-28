@@ -3,7 +3,6 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 10px 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.205);
+    border-top: 1px solid rgba(0, 0, 0, 0.055);
     font-size: 1.6rem;
-    background-color: rgba(0, 0, 0, 0.151);
 }
