@@ -93,7 +93,7 @@ const language = Object.keys(resourcesDb);
 function App() {
   const [resources, setResources] = useState("html");
 
-  console.log(resourcesDb[resources]);
+  // console.log(resourcesDb[resources]);
 
   function linkHandler(links) {
     setResources(links);

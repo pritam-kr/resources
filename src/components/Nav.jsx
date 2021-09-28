@@ -5,7 +5,7 @@ const Nav = ()=>{
     return(
         <>
             <nav className="nav-bar">
-                <h2>Web development Resources</h2>
+                <h3>Web development Resources</h3>
             </nav>
         </>
     )
