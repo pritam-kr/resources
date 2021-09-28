@@ -117,7 +117,7 @@ const resourcesDb = {
       link: "https://www.youtube.com/watch?v=8GPPJpiLqHk",
     },
   ],
-  youtube: [{}],
+  bootstrap: [{}],
   CLI: [
     {
       title: "First CLI App: Intro to programming",
