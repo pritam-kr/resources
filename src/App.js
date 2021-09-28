@@ -117,7 +117,16 @@ const resourcesDb = {
       link: "https://www.youtube.com/watch?v=8GPPJpiLqHk",
     },
   ],
-  bootstrap: [{}],
+  bootstrap: [
+    {
+      title: "official doc - Learn Bootstrap",
+      link: "https://getbootstrap.com/",
+    },
+    {
+      title: "Traversy media - Bootstrap 5 Crash Course",
+      link: "https://www.youtube.com/watch?v=4sosXZsdy-s",
+    },
+  ],
   CLI: [
     {
       title: "First CLI App: Intro to programming",
