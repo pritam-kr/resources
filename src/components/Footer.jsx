@@ -5,7 +5,7 @@ const Footer = ()=>{
     return (
         <>
             <footer id="footer">
-              <i class="fab fa-github"></i>
+              <a href="https://github.com/pritam-kr/resources"> <i class="fab fa-github"></i> </a>
             </footer>
         </>
     )
