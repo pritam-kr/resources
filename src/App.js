@@ -79,7 +79,13 @@ const resourcesDb = {
       title: "microsoft - Web Development for Beginners",
       link: "https://github.com/microsoft/Web-Dev-For-Beginners",
     },
-  ]
+  ],
+  openSource: [{}],
+  projects: [{}],
+  youtube: [{}],
+  CLI: [{}],
+  nodejs: [{}],
+  extensions: [{}],
 };
 
 const language = Object.keys(resourcesDb);
@@ -112,9 +118,7 @@ function App() {
             })}
             <div className="about-info">
               <h5 className="container-text">About</h5>
-              <p>
-                You can get all usefull resources.
-              </p>
+              <p>You can get all usefull resources.</p>
             </div>
           </div>
           <div className="links-container">
@@ -129,7 +133,7 @@ function App() {
                     <p> {el.link}</p>
                     <a href={el.link} target="_blank" rel="noreferrer">
                       <span>
-                        <i class="fas fa-link"></i>
+                        <i className="fas fa-link"></i>
                       </span>{" "}
                     </a>
                   </div>
