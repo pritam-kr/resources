@@ -92,11 +92,12 @@
   display: block;
 }
 .link-box p{
-  width: 50px !important;
+  width: 50% !important;
 }
 .link-box i{
   color: rgb(0, 89, 255);
   margin-top: 10px;
+  font-size: 1.3rem;
 }
 
 .share_icon{

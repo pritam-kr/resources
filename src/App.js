@@ -260,12 +260,12 @@ function App() {
                         {el.title}{" "}
                       </a>
                     </h3>{" "}
-                    <p> {el.link}</p>
-                    <a href={el.link} target="_blank" rel="noreferrer">
-                      <span>
+                    
+                    <span>
+                      <a href={el.link} target="_blank" rel="noreferrer">
                         <i className="fas fa-link"></i>
-                      </span>{" "}
-                    </a>
+                      </a>
+                    </span>{" "}
                   </div>
                 </>
               );
