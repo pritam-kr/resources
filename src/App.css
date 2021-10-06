@@ -1,8 +1,8 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -11,25 +11,29 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f1f1f100;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-#main-section{
+#main-section {
   display: flex;
   justify-content: center;
   padding: 30px 0;
-  
 }
-.resources-container{
+
+:root {
+  --border-color: #0059ff;
+}
+.resources-container {
   width: 1200px;
   max-width: 100%;
   margin: 0 20px;
@@ -37,16 +41,14 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.keywords-container{
-  border: 1px solid rgba(0, 0, 0, 0.144);
+.keywords-container {
   border-radius: 5px;
   padding: 10px;
   width: 400px;
   margin: 5px;
   height: 600px;
 }
-.links-container{
-  border: 1px solid rgba(0, 0, 0, 0.144);
+.links-container {
   border-radius: 5px;
   padding: 10px;
   overflow-y: scroll;
@@ -55,10 +57,10 @@
   margin: 5px;
 }
 
-.about-info{
+.about-info {
   margin-top: 20px;
 }
-.btn-lang{
+.btn-lang {
   background-color: transparent;
   padding: 4px 10px;
   margin: 5px 5px 5px 0;
@@ -67,45 +69,48 @@
   border-radius: 5px;
   outline: none;
 }
-.btn-lang:active{
+.btn-lang:active {
   background-color: rgba(0, 0, 0, 0.109);
-  
 }
-.container-text{
+.container-text {
   margin: 5px 0;
   font-size: 1.05rem;
 }
 
-.link-box{
+.link-box {
   border: 1px solid rgba(0, 0, 0, 0.205);
   border-radius: 5px;
   margin: 10px 0;
   padding: 1rem;
 }
-.link-box h3{
-  color: rgb(5, 5, 5);
+.link-box h3 {
+  color: rgba(42, 42, 42, 0.794) !important;
   width: auto;
 }
-.link-box a{
+.link-box a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.856);
   display: block;
 }
-.link-box p{
-  width: 50% !important;
+.link-box p {
+  width: 100% !important;
 }
-.link-box i{
+.link-box .type{
+  margin: 4px 0 !important;
+  font-size: small;
+}
+.link-box i {
   color: rgb(0, 89, 255);
   margin-top: 10px;
   font-size: 1.3rem;
 }
 
-.share_icon{
+.share_icon {
   margin: 6px 6px 6px 0;
 }
 
-@media (max-width: 1158px){
-  .keywords-container{
+@media (max-width: 1158px) {
+  .keywords-container {
     height: auto;
   }
 }
