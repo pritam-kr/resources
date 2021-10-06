@@ -20,13 +20,11 @@ var color = "#0f66d8";
 function App() {
   const [resources, setResources] = useState("html");
 
-  function linkHandler(links) {
+  function linkHandler(e, links) {
     setResources(links);
   }
 
   var url = "https://learning-resources-links.netlify.app/";
-
-  
 
   return (
     <>
@@ -39,7 +37,7 @@ function App() {
               return (
                 <button
                   className="btn-lang"
-                  onClick={() => linkHandler(eachLang)}
+                  onClick={(e) => linkHandler(e, eachLang)}
                 >
                   {eachLang}
                 </button>
@@ -83,11 +81,10 @@ function App() {
                           {el.title}{" "}
                         </a>
                       </h3>
-                      <CopyToClipboard
-                        text={el.link}
-                        onCopy={() => {}}
-                      >
-                        <span className="btn-copy"><i class="fas fa-copy"></i></span>
+                      <CopyToClipboard text={el.link} onCopy={() => {}}>
+                        <span className="btn-copy">
+                          <i className="fas fa-copy"></i>
+                        </span>
                       </CopyToClipboard>
                     </div>
                     <p className="type">
