@@ -13,6 +13,7 @@ import {
 } from "react-share";
 
 const language = Object.keys(resourcesDb);
+var color = '#0f66d8'
 
 function App() {
   const [resources, setResources] = useState("html");
@@ -64,7 +65,7 @@ function App() {
             </div>
           </div>
           <div className="links-container">
-            <h5 className="container-text">Resources for {resources}</h5>
+            <h5 className="container-text">Resources for <span style={{color: color}}>{resources}</span></h5>
             {resourcesDb[resources].map((el) => {
               return (
                 <>
@@ -75,7 +76,7 @@ function App() {
                         {el.title}{" "}
                       </a>
                     </h3>
-                    <p className="type"><b>Content type:</b> {el.type}</p>
+                    <p className="type"><b> {el.type}</b></p>
                     <p>{el.des}</p>{" "}
                     <span>
                       <a href={el.link} target="_blank" rel="noreferrer">

@@ -5,8 +5,7 @@ footer{
     padding: 10px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.055);
     font-size: 1.6rem;
-    
 }
 footer i{
-    color: #0059ff !important;
+    color: rgba(46, 45, 45, 0.801) !important;
 }
