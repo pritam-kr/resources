@@ -117,6 +117,18 @@
   font-size: 1.3rem;
 }
 
+.link-box .link-box-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-box .link-box-header .btn-copy i{
+  color: rgba(73, 73, 73, 0.794) !important;
+  cursor: pointer;
+}
+.link-box .link-box-header .btn-copy i:active{
+  color: rgb(49, 49, 49) !important;
+}
 .share_icon {
   margin: 6px 6px 6px 0;
 }

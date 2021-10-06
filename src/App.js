@@ -12,8 +12,10 @@ import {
   LinkedinIcon,
 } from "react-share";
 
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 const language = Object.keys(resourcesDb);
-var color = '#0f66d8'
+var color = "#0f66d8";
 
 function App() {
   const [resources, setResources] = useState("html");
@@ -23,6 +25,8 @@ function App() {
   }
 
   var url = "https://learning-resources-links.netlify.app/";
+
+  
 
   return (
     <>
@@ -65,18 +69,30 @@ function App() {
             </div>
           </div>
           <div className="links-container">
-            <h5 className="container-text">Resources for <span style={{color: color}}>{resources}</span></h5>
+            <h5 className="container-text">
+              Resources for <span style={{ color: color }}>{resources}</span>
+            </h5>
             {resourcesDb[resources].map((el) => {
               return (
                 <>
                   <div className="link-box">
-                    <h3>
-                      {" "}
-                      <a href={el.link} target="_blank" rel="noreferrer">
-                        {el.title}{" "}
-                      </a>
-                    </h3>
-                    <p className="type"><b> {el.type}</b></p>
+                    <div className="link-box-header">
+                      <h3>
+                        {" "}
+                        <a href={el.link} target="_blank" rel="noreferrer">
+                          {el.title}{" "}
+                        </a>
+                      </h3>
+                      <CopyToClipboard
+                        text={el.link}
+                        onCopy={() => {}}
+                      >
+                        <span className="btn-copy"><i class="fas fa-copy"></i></span>
+                      </CopyToClipboard>
+                    </div>
+                    <p className="type">
+                      <b> {el.type}</b>
+                    </p>
                     <p>{el.des}</p>{" "}
                     <span>
                       <a href={el.link} target="_blank" rel="noreferrer">
