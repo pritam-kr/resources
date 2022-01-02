@@ -5,7 +5,7 @@ const Footer = ()=>{
     return (
         <>
             <footer id="footer">
-              <strong> Open Source</strong>
+               <p><b>Open Source</b></p> 
             </footer>
         </>
     )
